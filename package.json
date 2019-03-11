@@ -1,7 +1,7 @@
 {
-  "name": "andrew-component-proxy",
+  "name": "saleboat-proxy",
   "version": "1.0.0",
-  "description": "A proxy server for the product-gallery-summary repo.",
+  "description": "A proxy server for ecommerce platform saleboat",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/amazonians-110/andrew-component-proxy.git"
   },
-  "author": "Andrew Mitchell",
+  "author": "Andrew Mitchell & Kheng Chew",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amazonians-110/andrew-component-proxy/issues"
@@ -22,6 +22,7 @@
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
     "i": "^0.3.6",
     "serve-favicon": "^2.5.0"
   }
