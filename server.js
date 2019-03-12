@@ -19,7 +19,7 @@ app.get('/:id', (req, res) => {
   res.sendFile(`${__dirname}/public/index.html`);
 });
 
-app.use('/api/related', proxy({ target: 'http://localhost:3007' }));
+app.use('/api/related', proxy({ target: 'http://ec2-54-219-186-15.us-west-1.compute.amazonaws.com/' }));
 
 app.get('*', (req, res) => {
   res.redirect('/1');
