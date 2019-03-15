@@ -11,10 +11,12 @@ app.use(cors());
 // app.use(compression());
 
 app.get('/:id', (req, res) => {
+  console.log(req.params.id);
   if (req.params.id === 'loaderio-bcf2b5763202644d69f14ad79f670945') {
     res.sendFile(`${__dirname}/public/loaderio-bcf2b5763202644d69f14ad79f670945.txt`);
+  } else {
+    res.sendFile(`${__dirname}/public/index.html`);
   }
-  res.sendFile(`${__dirname}/public/index.html`);
 });
 
 app.use('/api/related', proxy({ target: 'http://ec2-54-153-105-133.us-west-1.compute.amazonaws.com/' }));
