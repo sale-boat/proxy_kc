@@ -21,7 +21,7 @@ app.use('/api/related', proxy({ target: 'http://ec2-54-153-105-133.us-west-1.com
 
 app.use('/api/reviews', proxy({ target: 'http://ec2-3-90-53-108.compute-1.amazonaws.com' }));
 
-app.use('/api/products', proxy({ target: 'http://ec2-3-87-17-2.compute-1.amazonaws.com/' }));
+app.use('/api/products', proxy({ target: 'http://ec2-3-94-89-165.compute-1.amazonaws.com/' }));
 
 app.use('/api', proxy({ target: 'http://ec2-54-211-88-14.compute-1.amazonaws.com/' }))
 
