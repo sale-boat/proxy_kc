@@ -13,6 +13,8 @@ app.use(cors());
 app.get('/:id', (req, res) => {
   if (req.params.id === 'loaderio-bcf2b5763202644d69f14ad79f670945') {
     res.sendFile(`${__dirname}/public/loaderio-bcf2b5763202644d69f14ad79f670945.txt`);
+  if (req.params.id === 'loaderio-cc592d06bb3fc4d1a35749511c72b4e9') {
+    res.sendFile(`${__dirname}/public/loaderio-cc592d06bb3fc4d1a35749511c72b4e9.txt`);
   } else {
     res.sendFile(`${__dirname}/public/index.html`);
   }
