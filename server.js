@@ -1,4 +1,4 @@
-require('newrelic');
+// require('newrelic');
 const express = require('express');
 const cors = require('cors');
 // const compression = require('compression');
@@ -11,7 +11,6 @@ app.use(cors());
 // app.use(compression());
 
 app.get('/:id', (req, res) => {
-  console.log(req.params.id);
   if (req.params.id === 'loaderio-bcf2b5763202644d69f14ad79f670945') {
     res.sendFile(`${__dirname}/public/loaderio-bcf2b5763202644d69f14ad79f670945.txt`);
   } else {
